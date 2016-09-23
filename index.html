@@ -13,10 +13,10 @@
     <form class="form-inline searchForm" role="form">
       <div class="form-group">
 
-        <!-- <input class="form-control" placeholder="Search Shitty Friends" ng-model="friendFilter"> -->
-
         <input class="form-control" placeholder="Search Dumb Name" ng-model="friendFilter.name">
         <input class="form-control" placeholder="Search Lame Location" ng-model="friendFitler.current_location.name">
+
+        <select ng-model="orderAttribute" ng-options="option.value as option.label for option in searchAttrOptions" class="input-medium"></select>
 
         <select class="input-medium" ng-model="sortProp">
           <option value="name">Name</option>

@@ -1,6 +1,16 @@
 myApp.controller('FriendController', function($scope){
     $scope.sortProp = "";
-    $scope.sortDirection = true; 
+    $scope.sortDirection = true;
+
+    $scope.searchAttrOptions = [
+        { label: 'Name', value: 'name' },
+        { label: '#Friends', value: 'friend_count' },
+        { label: 'City', value: 'current_location.city' },
+        { label: '#Friends', value: 'current_location.state' },
+        { label: 'Country', value: 'current_location.country' }
+      ];
+
+
     $scope.friends = [
       {
         "name": "Preston McNeil",
